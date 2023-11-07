@@ -1,0 +1,35 @@
+[
+  {
+    "role": "English Transcriber",
+    "organisation": "Idictate ",
+    "startDate": "2017",
+    "endDate": "2023",
+    "experiences": [
+      "Transcribed voicemail messages, memos, letters, legal files, medical files ",
+      "Keen to details and very strict with quality transcription"
+    ],
+    "imageSrc": "history/Idictate.png"
+  },
+  {
+    "role": "Customer Service Representative",
+    "organisation": "Ibex Global",
+    "startDate": "Aug, 2016",
+    "endDate": "March, 2017",
+    "experiences": [
+      "Responded to queries promptly and accurately.",
+      "Assisted in streamlining the process of creating a product support materials and information, resulting in a resolution time decrease of 20% for escalated cases"
+    ],
+    "imageSrc": "history/Ibex.png"
+  },
+  {
+    "role": "Virtual Assistant",
+    "organisation": "Freelancing",
+    "startDate": "May 2017",
+    "endDate": "Present",
+    "experiences": [
+      "Assisted all my clients with different support techniques,",
+      "Wide range of support from basic troubleshooting, content creation, data encoding, gaming as well as technical support on different devices."
+    ],
+    "imageSrc": "history/Freelancer.png"
+  }
+]

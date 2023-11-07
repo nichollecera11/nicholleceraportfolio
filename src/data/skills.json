@@ -1,0 +1,50 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "Javascript",
+    "imageSrc": "skills/Javascript.png"
+  },
+  {
+    "title": "MySQL",
+    "imageSrc": "skills/MySQL.png"
+  },
+  {
+    "title": "Node",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "PHP",
+    "imageSrc": "skills/PHP.png"
+  },
+  {
+    "title": "Laravel",
+    "imageSrc": "skills/Laravel.png"
+  },
+  {
+    "title": "DBeaver",
+    "imageSrc": "skills/DBeaver.png"
+  },
+  {
+    "title": "Postman",
+    "imageSrc": "skills/Postman.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/Git.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "skills/Bootstrap.png"
+  }
+]

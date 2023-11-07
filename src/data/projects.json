@@ -1,0 +1,27 @@
+[
+    { 
+        "title": "NML Portfolio",
+        "imageSrc": "projects/MP1.png",
+        "description": "This is my mini project 1 in the program",
+        "skills": ["HTML","CSS", "Bootstrap"],
+        "demo": "https://nichollecera11.github.io/mini_project1/",
+        "source": "https://nichollecera11.github.io/mini_project1/"
+    },
+    { 
+        "title": "Reserva Parking Solutions",
+        "imageSrc": "projects/ReservaPS.png",
+        "description": "Parking Assistant",
+        "skills": ["HTML","CSS", "Bootstrap","Javascript","React"],
+        "demo": "https://mp2-for-deployment-mw91vhw21-nichollecera11.vercel.app",
+        "source": "https://mp2-for-deployment-mw91vhw21-nichollecera11.vercel.app"
+    },
+    { 
+        "title": "Reserva Hotel Reservation",
+        "imageSrc": "projects/ReservaHR.png",
+        "description": "Hotel Reservation",
+        "description2": "Best Capstone",
+        "skills": ["React","DBeaver", "Javascript","PHP", "Postman", "Node"],
+        "demo": "https://capstone-psi-six.vercel.app",
+        "source": "https://capstone-psi-six.vercel.app"
+    }
+]
