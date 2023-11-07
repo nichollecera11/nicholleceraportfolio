@@ -107,4 +107,11 @@
   .content {
     align-items: center;
   }
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+  }
 }
