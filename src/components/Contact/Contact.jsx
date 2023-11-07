@@ -12,33 +12,24 @@ export const Contact = () => {
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/emailIcon.png")}
-            alt="Email Icon"
-            className={styles.img}
-          />
+          <img src={getImageUrl("contact/emailIcon.png")} alt="Email Icon" />
           <a href=" mailto:nichollecera11@gmail.com">
-            <p>nichollecera11@gmail.com</p>
+            nichollecera11@gmail.com
           </a>
         </li>
         <li className={styles.link}>
           <img
             src={getImageUrl("contact/linkedinIcon.png")}
             alt="LinkedIn Icon"
-            className={styles.img}
           />
-          <a href="https://www.linkedin.com/in/nichol-lecera-37a785197/" className={styles.aimg}>
-            <p>https://www.linkedin.com/in/nichol-lecera-37a785197</p>
+          <a href="https://www.linkedin.com/in/nichol-lecera-37a785197/">
+            https://www.linkedin.com/in/nichol-lecera-37a785197
           </a>
         </li>
         <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/githubIcon.png")}
-            alt="Github Icon"
-            className={styles.img}
-          />
-          <a href=" https://github.com/nichollecera11" className={styles.aimg}>
-            <p>https://github.com/nichollecera11</p>
+          <img src={getImageUrl("contact/githubIcon.png")} alt="Github Icon" />
+          <a href=" https://github.com/nichollecera11">
+            https://github.com/nichollecera11
           </a>
         </li>
       </ul>
