@@ -9,9 +9,8 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Nick</h1>
         <p className={styles.description}>
-          I'm a junior full stack web developer with experiences using React, Figma,
-          NodeJS, MySQL and Laravel. Reach out if you would like to learn how
-          these languages made my brain like soup
+          I'm a junior full stack web developer with experiences using React,
+          NodeJS, MySQL and Laravel. Reach out if you would like to learn more.
         </p>
         <a href="mailto:nichol.lecera@icloud.com" className={styles.contactBtn}>
           Contact Me
