@@ -88,7 +88,7 @@
 
 .bottomBlur {
   position: absolute;
-  width:  70vw;
+  width: 70vw;
   height: 50vw;
   min-width: 350px;
   min-width: 250px;
@@ -108,10 +108,7 @@
     align-items: center;
   }
   .title {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-
   }
 }
