@@ -116,4 +116,31 @@
     align-items: center;
     justify-content: center;
   }
+  .topBlur {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 150px;
+    min-width: 150px;
+    top: -128px;
+    left: -10vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+  }
+
+  .bottomBlur {
+    position: absolute;
+    width: 40vw;
+    height: 30vw;
+    min-width: 150px;
+    min-width: 100px;
+    top: 246px;
+    right: 0vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+  }
 }
