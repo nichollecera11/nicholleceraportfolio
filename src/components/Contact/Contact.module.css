@@ -77,7 +77,11 @@
     justify-content: center;
     margin-right: -20px;
   }
+  .text h2 {
+    font-size: 60px;}
+
   .text p {
+    font-size: 30px;
     align-items: center;
     justify-content: center;
   }
