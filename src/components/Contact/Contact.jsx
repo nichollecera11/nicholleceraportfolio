@@ -27,7 +27,7 @@ export const Contact = () => {
             alt="LinkedIn Icon"
             className={styles.img}
           />
-          <a href="https://www.linkedin.com/in/nichol-lecera-37a785197/">
+          <a href="https://www.linkedin.com/in/nichol-lecera-37a785197/" className={styles.aimg}>
             https://www.linkedin.com/in/nichol-lecera-37a785197
           </a>
         </li>
@@ -37,7 +37,7 @@ export const Contact = () => {
             alt="Github Icon"
             className={styles.img}
           />
-          <a href=" https://github.com/nichollecera11">
+          <a href=" https://github.com/nichollecera11" className={styles.aimg}>
             https://github.com/nichollecera11
           </a>
         </li>
