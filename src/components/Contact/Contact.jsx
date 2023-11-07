@@ -18,7 +18,7 @@ export const Contact = () => {
             className={styles.img}
           />
           <a href=" mailto:nichollecera11@gmail.com">
-            nichollecera11@gmail.com
+            <p>nichollecera11@gmail.com</p>
           </a>
         </li>
         <li className={styles.link}>
@@ -28,7 +28,7 @@ export const Contact = () => {
             className={styles.img}
           />
           <a href="https://www.linkedin.com/in/nichol-lecera-37a785197/" className={styles.aimg}>
-            https://www.linkedin.com/in/nichol-lecera-37a785197
+            <p>https://www.linkedin.com/in/nichol-lecera-37a785197</p>
           </a>
         </li>
         <li className={styles.link}>
@@ -38,7 +38,7 @@ export const Contact = () => {
             className={styles.img}
           />
           <a href=" https://github.com/nichollecera11" className={styles.aimg}>
-            https://github.com/nichollecera11
+            <p>https://github.com/nichollecera11</p>
           </a>
         </li>
       </ul>
