@@ -5,6 +5,8 @@ import { Experience } from "./components/Experience/Experience";
 import { Hero } from "./components/Hero/Hero";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
+import { Certificate } from "./components/Certificates/Certificate";
+import { slides } from "./data/carouselData.json";
 
 function App() {
   return <div className={styles.App}>
@@ -13,6 +15,7 @@ function App() {
     <About />
     <Experience />
     <Projects />
+    <Certificate data={slides} />
     <Contact />
   </div>;
 }

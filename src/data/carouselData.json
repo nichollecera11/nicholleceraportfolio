@@ -1,0 +1,20 @@
+{
+  "slides": [
+    {
+      "imageSrc": "certificates/VirtualAssistant.png",
+      "alt": "Image 1 for Carousel"
+    },
+    {
+      "imageSrc": "certificates/TESL.png",
+      "alt": "Image 2 for Carousel"
+    },
+    {
+      "imageSrc": "certificates/CSR.png",
+      "alt": "Image 3 for Carousel"
+    },
+    {
+      "imageSrc": "certificates/KodeGo.png",
+      "alt": "Image 4 for Carousel"
+    }
+  ]
+}
