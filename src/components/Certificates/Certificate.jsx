@@ -16,7 +16,7 @@ export const Certificate = ({ data }) => {
   };
 
   return (
-    <div className={styles.carouselContainer}>
+    <div className={styles.carouselContainer} id="certificates">
       <h1 className={styles.title}>Certificates</h1>
       <div className={styles.carousel}>
         <BsArrowLeftCircleFill
