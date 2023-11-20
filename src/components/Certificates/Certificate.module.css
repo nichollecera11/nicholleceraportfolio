@@ -92,7 +92,7 @@
   }
   .slide {
     border-radius: 0.5rem;
-    max-width: 75%;
+    max-width: 65%;
     height: auto;
   }
 
@@ -109,11 +109,11 @@
   }
   
   .arrowLeft {
-    left: 2rem;
+    left: 3rem;
   }
   
   .arrowRight {
-    right: 2rem;
+    right: 3rem;
   }
 
   .indicators {
