@@ -1,0 +1,109 @@
+<div id="container-id"></div>
+
+<script>
+  // Define your function
+  function myFunction() {
+    (function() {
+      const c = document.getElementById("strife");
+      if (!c)
+        return;
+      const b = c.getAttribute("data-strife-key") || "", U = c.getAttribute("data-strife-container-id"), y = document.getElementsByClassName("strife-button"), a = !!(y != null && y.length), w = !!(c.getAttribute("data-use-webapp") || c.getAttribute("use-webapp") && !a);
+      let s, d = null;
+      function A() {
+        if (document.getElementById("quote-and-apply"))
+          return;
+        d = document.createElement("link"), d.id = "quote-and-apply-style", d.rel = "stylesheet";
+        let e = "widget.css";
+        w ? e = "webapp.css" : a && (e = "modal.css"), d.href = `https://cdn.quoteandapply.io/css/${e}`, s.style.display = "none", d.onload = () => s.style.display = "block", document.head.appendChild(d);
+      }
+      function _() {
+        s.classList.contains("strife-open") && s.classList.remove("strife-open"), s.classList.contains("strife-closed") || s.classList.add("strife-closed");
+      }
+      function I() {
+        s.classList.contains("strife-closed") && s.classList.remove("strife-closed"), s.classList.contains("strife-open") || s.classList.add("strife-open");
+      }
+      function v() {
+        a && setTimeout(() => {
+          let e = document.documentElement, n = (window.scrollX || e.scrollLeft) - (e.clientLeft || 0), o = (window.scrollY || e.scrollTop) - (e.clientTop || 0);
+          I(), window.scrollTo(n, o);
+        }, 150);
+      }
+      function E(e, n = !0) {
+        if (!e)
+          return "";
+        let o, g, P, l = e;
+        try {
+          l = new URL(e);
+          const L = l.hash;
+          l.hash = "", g = l.searchParams.get("eapp_id"), P = l.searchParams.get("eapp_uuid"), L && L.startsWith("#resume=") && g && P && (o = L), n && o && history.pushState("", document.title, l.pathname + l.search), l.searchParams.delete("eapp_id"), l.searchParams.delete("eapp_uuid");
+        } catch {
+        }
+        return { url: l.toString(), hash: o, id: g, uuid: P };
+      }
+      let h, H, C;
+      try {
+        const e = new URL(top.location.href);
+        h = top.location.href, H = e.searchParams.has("prefill"), e.hash.startsWith("#resume=") && (C = e.hash);
+      } catch {
+      }
+      let u, R, B;
+      try {
+        const e = new URL(location.href);
+        u = location.href, R = e.searchParams.has("prefill"), e.hash.startsWith("#resume=") && (B = e.hash);
+      } catch {
+      }
+      let r;
+      C ? r = h : B ? r = u : H ? r = h : R ? r = u : h ? r = h : u && (r = u);
+      const p = E(r), O = p.url, f = E(c.src, !1), S = f.url;
+      let t;
+      p.hash ? t = p : f.hash ? t = f : p.id && p.uuid ? t = p : f.id && f.uuid && (t = f), s = document.createElement("iframe"), s.classList.add("strife-frame"), a && _();
+      let m = document.getElementById(U);
+      if (m || (m = document.body), !a) {
+        const e = document.createElement("div");
+        e.classList.add("strife-frame-parent"), m.appendChild(e), m = e;
+      }
+      const i = new URL("https://apply.back9ins.com/embed");
+      O && i.searchParams.append("parent_url", O), S && i.searchParams.append("script_src", S), b && i.searchParams.append("client_id", b), a && i.searchParams.append("use_modal", a), w && i.searchParams.append("use_webapp", w), t != null && t.hash ? (i.searchParams.append("eapp_id", t.id), i.searchParams.append("eapp_uuid", t.uuid), i.hash = t.hash) : t != null && t.id && (t != null && t.uuid) && (i.searchParams.append("eapp_id", t.id), i.searchParams.append("eapp_uuid", t.uuid)), s.src = i, m.appendChild(s), a && Array.prototype.forEach.call(y, (e) => {
+        e.addEventListener("click", v, !1);
+      }), window.addEventListener(
+        "message",
+        function(e) {
+          if (e.data.type === "close")
+            a && _();
+          else if (e.data.type === "height-resize") {
+            if (a || w)
+              return;
+            const n = 2;
+            s.style.height = `${e.data.value + n}px`;
+          } else if (e.data.type === "focus") {
+            let n = -10;
+            e && e.data && e.data.value && (n += e.data.value);
+            const o = s.getBoundingClientRect().top + window.pageYOffset + n;
+            window.scrollTo({ top: o, behavior: e.data.behavior });
+          }
+        },
+        !1
+      ), A(), a || v();
+    })();
+    console.log('My function was called!');
+  }
+</script>
+
+<script>
+  // Function to check if the strife script has loaded
+  function checkStrifeScriptLoaded() {
+    const strifeScript = document.getElementById("strife");
+    if (strifeScript && strifeScript.getAttribute("data-loaded") === "true") {
+      // Call your function here after the strife script has loaded
+      myFunction();
+    } else {
+      // Retry checking after a short delay if the strife script hasn't loaded yet
+      setTimeout(checkStrifeScriptLoaded, 100);
+    }
+  }
+
+  // Call the function to check if the strife script has loaded
+  checkStrifeScriptLoaded();
+</script>
+
+<script id="strife" src="https://cdn.quoteandapply.io/widget.js" data-strife-key="VPbVC5SHsTtWQ5Bk" data-strife-container-id="container-id" data-loaded="false"></script>

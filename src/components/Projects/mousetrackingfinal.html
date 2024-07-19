@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WordPress Background Animation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f9f9f9; /* Default background */
+  }
+
+  body.dark {
+    background: #1f1f1f; /* Dark mode background */
+  }
+
+  canvas {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .bg-change {
+    position: absolute;
+    color: #000;
+    top: 50px;
+    left: 50px;
+    padding: 20px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    cursor: pointer;
+  }
+
+  .bg-change.whitetext {
+    color: #fff;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .align {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text--center {
+    text-align: right;
+  }
+
+  .site__header {
+    display: none; /* Hide the header */
+  }
+
+  .site__logo {
+    display: none; /* Hide the logo */
+  }
+
+  .site__section {
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .site__section--start {
+    background: url(https://staging.itechmedialogic.com/wp-content/uploads/2024/06/slider-img.jpg) no-repeat top;
+  }
+
+  .button {
+    display: none; /* Hide buttons */
+  }
+
+  .grid {
+    margin: 0 auto;
+    max-width: 74rem;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0px 0px 120px 0px;
+    text-transform: uppercase;
+  }
+
+  svg {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+  <canvas id="bg-animation"></canvas>
+
+  <div class="bg-change">
+    INVERT-BG
+  </div>
+
+  <main class="site__main">
+    <section class="site__section site__section--start align text--center">
+      <div class="grid">
+        <h1></h1>
+        <a href="#" class="button--scroll animation animation--infinite animation--up-down"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="-275 398.7 44.2 44.2"><path fill="#fff" d="M-275 420.8c0-12.2 9.9-22.1 22.1-22.1s22.1 9.9 22.1 22.1c0 12.2-9.9 22.1-22.1 22.1s-22.1-9.9-22.1-22.1zm42.7 0c0-11.4-9.2-20.6-20.6-20.6-11.4 0-20.6 9.2-20.6 20.6 0 11.4 9.2 20.6 20.6 20.6 11.4 0 20.6-9.3 20.6-20.6zM-260.6 418c0-.2.1-.4.2-.5.3-.3.8-.3 1.1 0l6.8 6.8 6.8-6.8c.3-.3.8-.3 1.1 0 .3.3.3.8 0 1.1l-7.3 7.3c-.3.3-.8.3-1.1 0l-7.3-7.3c-.3-.2-.3-.4-.3-.6z"/></svg></a>
+      </div>
+    </section>
+  </main>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+  <script>
+    var backgroundAnimation = function () {
+      var width, height, canvas, ctx, points, target, animateHeader = true;
+
+      function initHeader() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        target = { x: width / 2, y: height / 2 };
+
+        canvas = document.getElementById('bg-animation');
+        canvas.width = width;
+        canvas.height = height;
+        ctx = canvas.getContext('2d');
+
+        points = [];
+        for (var x = 0; x < width; x = x + width / 10) {
+          for (var y = 0; y < height; y = y + height / 10) {
+            var px = x + Math.random() * width / 10;
+            var py = y + Math.random() * height / 10;
+            var p = { x: px, originX: px, y: py, originY: py };
+            points.push(p);
+          }
+        }
+
+        for (var i = 0; i < points.length; i++) {
+          var closest = [];
+          var p1 = points[i];
+          for (var j = 0; j < points.length; j++) {
+            var p2 = points[j];
+            if (!(p1 == p2)) {
+              var placed = false;
+              for (var k = 0; k < 5; k++) {
+                if (!placed) {
+                  if (closest[k] == undefined) {
+                    closest[k] = p2;
+                    placed = true;
+                  }
+                }
+              }
+              for (var k = 0; k < 5; k++) {
+                if (!placed) {
+                  if (getDistance(p1, p2) < getDistance(p1, closest[k])) {
+                    closest[k] = p2;
+                    placed = true;
+                  }
+                }
+              }
+            }
+          }
+          p1.closest = closest;
+        }
+
+        for (var i in points) {
+          var c = new Circle(points[i], 2 + Math.random() * 2, 'rgba(0,0,0,0.2)');
+          points[i].circle = c;
+        }
+      }
+
+      function addListeners() {
+        if (!('ontouchstart' in window)) {
+          window.addEventListener('mousemove', mouseMove);
+        }
+        window.addEventListener('scroll', scrollCheck);
+        window.addEventListener('resize', resize);
+      }
+
+      function mouseMove(e) {
+        var posx = 0, posy = 0;
+        if (e.pageX || e.pageY) {
+          posx = e.pageX - (document.body.scrollLeft + document.documentElement.scrollLeft);
+          posy = e.pageY - (document.body.scrollTop + document.documentElement.scrollTop);
+        } else if (e.clientX || e.clientY) {
+          posx = e.clientX;
+          posy = e.clientY;
+        }
+        target.x = posx;
+        target.y = posy;
+      }
+
+      function scrollCheck() {
+        if (window.scrollY > height / 2) animateHeader = true;
+        else animateHeader = false;
+      }
+
+      function resize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+      }
+
+      function animate() {
+        if (animateHeader) {
+          ctx.clearRect(0, 0, width, height);
+          for (var i in points) {
+            if (Math.abs(getDistance(target, points[i])) < 4000) {
+              points[i].active = 0.3;
+              points[i].circle.active = 0.6;
+            } else if (Math.abs(getDistance(target, points[i])) < 20000) {
+              points[i].active = 0.1;
+              points[i].circle.active = 0.3;
+            } else if (Math.abs(getDistance(target, points[i])) < 40000) {
+              points[i].active = 0.02;
+              points[i].circle.active = 0.1;
+            } else {
+              points[i].active = 0;
+              points[i].circle.active = 0;
+            }
+            drawLines(points[i]);
+            points[i].circle.draw();
+          }
+        }
+        requestAnimationFrame(animate);
+      }
+
+      function Circle(pos, rad, color) {
+        var _this = this;
+        _this.pos = pos || null;
+        _this.radius = rad || null;
+        _this.color = color || null;
+
+        _this.draw = function () {
+          if (!_this.active) return;
+          ctx.beginPath();
+          ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
+          ctx.fillStyle = 'rgba(254,254,254,' + _this.active + ')';
+          ctx.fill();
+        };
+      }
+
+      function getDistance(p1, p2) {
+        return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
+      }
+
+      function drawLines(p) {
+        if (!p.active) return;
+        for (var i in p.closest) {
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(p.closest[i].x, p.closest[i].y);
+          ctx.strokeStyle = 'rgba(254,254,254,' + p.active + ')';
+          ctx.stroke();
+        }
+      }
+
+      function shiftPoint(p) {
+        TweenMax.to(p, 1 + 1 * Math.random(), {
+          x: p.originX - 50 + Math.random() * 100,
+          y: p.originY - 50 + Math.random() * 100,
+          ease: Circ.easeInOut,
+          onComplete: function () {
+            shiftPoint(p);
+          }
+        });
+      }
+
+      function initAnimation() {
+        animate();
+        for (var i in points) {
+          shiftPoint(points[i]);
+        }
+      }
+
+      initHeader();
+      initAnimation();
+      addListeners();
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      backgroundAnimation();
+    });
+
+    // Toggle dark mode functionality
+    document.querySelector('.bg-change').addEventListener('click', function () {
+      document.body.classList.toggle('dark');
+      this.classList.toggle('whitetext');
+    });
+  </script>
+</body>
+</html>

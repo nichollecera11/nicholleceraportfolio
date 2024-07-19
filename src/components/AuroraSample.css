@@ -1,0 +1,969 @@
+.textwidget {
+  display: none;
+}
+
+.wp-block-column.container-meettheteam-1.has-background {
+  padding: 5%;
+}
+
+.wp-block-image {
+  margin: 0px auto;
+}
+
+p.paragraph.has-medium-font-size {
+  margin: 0px auto;
+}
+
+p.has-text-align-left.has-medium-font-size {
+  margin: 0px auto;
+}
+
+#topbar .callus {
+  display: flex;
+}
+
+.eight.columns .callus h4:nth-of-type(1)::before {
+  content: "";
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+  display: inline-block;
+  background: url("https://auroraeventteam.com/wp-content/uploads/2024/02/icons8-phone-25-1.png")
+    center center no-repeat;
+}
+
+#topbar .callus h4:nth-child(2) a::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  margin-right: 5px;
+  background: url("https://auroraeventteam.com/wp-content/uploads/2024/02/email-icon-99.png")
+    center center no-repeat;
+  background-size: cover;
+}
+
+.eight.columns .callus h4:nth-of-type(1) {
+  text-decoration: none;
+}
+
+#topbar .callus h4:nth-child(2) a::before {
+  padding-left: px;
+  margin-left: 20px;
+}
+
+.page-id-766 .rev_slider .tp-button.darkgrey {
+  background: #ffffff !important;
+  color: #66acc0 !important;
+  padding: 13px 24px !important;
+  box-shadow: none !important;
+  letter-spacing: 1px !important;
+}
+
+.page-id-766 .rev_slider .tp-button {
+  text-shadow: none !important;
+}
+
+.page-id-766 .rev_slider .tp-button.darkgrey:hover {
+  color: #ffffff !important;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#438ac2),
+    to(#1063a4)
+  ) !important;
+}
+
+div#gform_confirmation_message_4 {
+  text-align: center;
+}
+
+/*#rev_slider_2_1 {
+position: relative;
+}
+#rev_slider_2_1::before {
+content: url(https://auroraeventteam.com/wp-content/uploads/2024/01/logo-white.png);
+position:absolute;
+z-index: 100000;
+top: 80px;
+margin-left:1300px;
+}*/
+column-model-requirement {
+  border-radius: 20px !important;
+}
+
+:root .has-pale-cyan-blue-color {
+  color: #8ed1fc;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.wp-block-cover-image h1:not(.has-text-color),
+.wp-block-cover-image h2:not(.has-text-color),
+.wp-block-cover-image h3:not(.has-text-color),
+.wp-block-cover-image h4:not(.has-text-color),
+.wp-block-cover-image h5:not(.has-text-color),
+.wp-block-cover-image h6:not(.has-text-color),
+.wp-block-cover-image p:not(.has-text-color),
+.wp-block-cover h1:not(.has-text-color),
+.wp-block-cover h2:not(.has-text-color),
+.wp-block-cover h3:not(.has-text-color),
+.wp-block-cover h4:not(.has-text-color),
+.wp-block-cover h5:not(.has-text-color),
+.wp-block-cover h6:not(.has-text-color),
+.wp-block-cover p:not(.has-text-color) {
+  color: inherit;
+  width: 50%;
+  margin: auto;
+}
+
+.header-meettheteam-title {
+  font-family: "Inter";
+}
+
+/* Meet the Team CSS*/
+.container-meettheteam-img1 {
+  margin-bottom: 2px;
+}
+
+.is-style-default1 img {
+  border-radius: 1rem !important;
+  margin: 0 auto;
+}
+
+.is-style-default2 img {
+  /* margin-top: 15px; */
+  border-radius: 1rem !important;
+}
+
+.is-style-default3 img {
+  /* margin-top: 15px; */
+  border-radius: 1rem !important;
+}
+
+.is-style-default4 img {
+  border-radius: 1rem !important;
+  object-fit: cover;
+}
+
+.header1 {
+  font-family: "Roboto";
+}
+
+.header2 {
+  margin-top: 12.5px;
+  font-family: "Roboto";
+}
+
+.header3 {
+  margin-top: 12.5px;
+  font-family: "Roboto";
+}
+
+.header4 {
+  font-family: "Roboto";
+}
+
+.wp-block-paragraph {
+  font-family: "Roboto", sans-serif;
+}
+
+.header-meettheteam-subtitle {
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #444444;
+  letter-spacing: 1px;
+}
+
+.provide-talent-form {
+  padding: 15px;
+  border-radius: 1rem;
+  border: ridge #51e2f5;
+  color: black;
+}
+
+.provide-talent-image {
+  display: flex;
+  position: relative;
+  right: 50px;
+  overflow: visible;
+}
+
+.provide-talent-image img {
+  border-radius: 1rem !important;
+}
+
+.gform_wrapper_12 {
+  color: black;
+}
+
+.gform_wrapper select {
+  background-color: #ffffff;
+  color: #000000;
+
+  /*.wp-block-columns {
+   flex-wrap: nowrap;
+   /*width: 70%;*/
+  margin: 0px auto;
+  border-radius: 1rem;
+}
+
+/*
+.women-owned {
+   font-family: 'Poppins', sans-serif;
+}
+.provide-talent {
+       width: 100%;
+}*/
+
+/* .p-alicia-mtt {
+  margin-top: 10%;
+} */
+
+/*start migrating here to all devices*/
+
+/*Revisions 2-13-2024*/
+.container-meet-the-team {
+  padding: 15px 15px 15px 15px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.container-meettheteam-1 {
+  padding: 10px;
+  border: ridge #51e2f5;
+  border-radius: 1rem;
+  /* margin-top: 0px; */
+}
+
+.wp-block-group.meet-the-team-header.has-background {
+  width: 80%;
+  max-width: 80%;
+  margin: 50px auto;
+  border-radius: 1rem;
+}
+
+.wp-block-columns.has-background {
+  border-radius: 1rem !important;
+}
+
+.alicia-briggs-wells-header {
+  display: flex;
+  border-radius: 1rem;
+  border: ridge #51e2f5;
+  padding: 1%;
+  margin: 0px auto;
+  justify-content: center;
+  width: 70%;
+}
+
+.meet-the-team-alicia1 {
+  padding: 15px;
+  border: ridge #51e2f5;
+  border-radius: 1rem;
+  margin: 0px auto;
+  font-family: "Roboto";
+  max-width: 100%;
+  /* margin-top: 2%; */
+}
+
+/* footer#footer {
+  margin-top: 10%;
+} */
+
+/* .wp-block-columns.container1-column.has-background {
+  padding: 1.25em 0.15em;
+} */
+
+.alicia-briggs-wells-mtt {
+  /* margin-top: 3%; */
+  font-family: "Roboto";
+}
+
+.wp-block-columns.meet-the-team-alicia1.has-background {
+  width: 80%;
+}
+
+.wp-block-columns.are-vertically-aligned-center.container1-column.has-background {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 376px) and (min-width: 280px) {
+  /* .wp-block-columns.container-meettheteam-1.has-background {
+    margin-top: 10%;
+  } */
+
+  /* img.wp-image-5567 {
+    margin-top: 20%;
+  } */
+
+  /* .wp-block-column.container-meettheteam-1.has-background {
+    margin-top: 20% !important;
+  } */
+
+  .wp-block-columns {
+    margin-bottom: 0 !important;
+  }
+
+  #topbar {
+    height: 85px;
+  }
+
+  #topbar .callus {
+    display: block;
+    background: #289dcc;
+    height: 55px;
+  }
+
+  .wp-block-columns.section1-alicia {
+    display: flex;
+  }
+
+  .wp-block-columns.section2-alicia {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  h2.has-text-align-center.alicia-briggs-wells-header {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+
+  .wp-block-group.meet-the-team-header.has-background {
+    width: 60%;
+    max-width: 100%;
+    margin: 50px auto;
+    border-radius: 1rem;
+  }
+
+  .wp-block-columns.has-background {
+    border-radius: 1rem !important;
+  }
+
+  .alicia-briggs-wells-header {
+    border-radius: 1rem;
+    border: ridge #51e2f5;
+    padding: 1%;
+    width: 70%;
+    margin: auto;
+  }
+
+  .meet-the-team-alicia1 {
+    padding: 15px;
+    border: ridge #51e2f5;
+    border-radius: 1rem;
+    margin: 0px auto;
+    font-family: "Roboto";
+    max-width: 100%;
+  }
+
+  footer#footer {
+    margin-top: 20%;
+  }
+
+  /* .wp-block-columns.container1-column.has-background {
+    padding: 1.25em 0.15em;
+  } */
+
+  .alicia-briggs-wells-mtt {
+    font-family: "Roboto";
+  }
+
+  .wp-block-image.logo-LasVegas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .las-vegas-text {
+    margin-left: 15px;
+  }
+
+  .wp-block-columns.are-vertically-aligned-center.container1-column.has-background {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .wp-block-columns.meet-the-team-alicia1.has-background {
+    width: 80% !important;
+  }
+
+  .is-style-default1 img {
+    border-radius: 1rem !important;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 376px) {
+  /* img.wp-image-5567 {
+    margin-top: 20%;
+  } */
+
+  /* .wp-block-columns.container-meettheteam-1.has-background {
+    margin-top: 10%;
+  } */
+
+  .wp-block-columns {
+    margin-bottom: 0 !important;
+  }
+
+  h2.has-text-align-center.alicia-briggs-wells-header {
+    font-size: 16px !important;
+  }
+
+  .wp-block-group__inner-container:nth-child(1) {
+    flex-direction: column-reverse;
+  }
+
+  .wp-block-columns.section1-alicia {
+    display: flex;
+  }
+
+  .wp-block-columns.section2-alicia {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #topbar {
+    height: 85px;
+  }
+
+  #topbar .callus {
+    display: block;
+    background: #289dcc;
+    height: 35px;
+  }
+
+  #topbar .callus h4:nth-child(2) a::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: -10px;
+    background: url("https://auroraeventteam.com/wp-content/uploads/2024/02/email-icon-99.png")
+      center center no-repeat;
+    background-size: cover;
+  }
+
+  #topbar .social-icons {
+    margin-top: 20px;
+  }
+
+  #topbar .callus h4 {
+    margin-bottom: 0px;
+  }
+
+  .logo-LasVegas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+
+  .las-vegas-text {
+    justify-content: center;
+    padding: 10px;
+    margin-left: 18px;
+  }
+
+  .provide-talent-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    left: 0px;
+  }
+
+  .container-meettheteam-img1 {
+    display: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-meettheteam-img2 {
+    display: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-meettheteam-img3 {
+    display: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-meettheteam-img4 {
+    display: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .is-style-default1 img {
+    border-radius: 1rem !important;
+    margin: 0 auto;
+  }
+
+  .is-style-default2 img {
+    margin-left: 70px;
+  }
+
+  .is-style-default3 img {
+    margin-left: 70px;
+  }
+
+  .is-style-default4 img {
+    margin-left: 50px;
+  }
+
+  /* h1.has-text-align-center {
+    margin-top: 5%;
+  } */
+
+  /* img.wp-image-4394 {
+    margin-top: 50px;
+  } */
+
+  .wp-block-group.meet-the-team-header.has-background {
+    width: 60%;
+    max-width: 100%;
+    margin: 50px auto;
+    border-radius: 1rem;
+  }
+
+  .wp-block-columns.has-background {
+    border-radius: 1rem !important;
+  }
+
+  .alicia-briggs-wells-header {
+    border-radius: 1rem;
+    border: ridge #51e2f5;
+    padding: 1%;
+    width: 70%;
+    margin: auto;
+  }
+
+  .meet-the-team-alicia1 {
+    padding: 15px;
+    border: ridge #51e2f5;
+    border-radius: 1rem;
+    margin: 0px auto;
+    font-family: "Roboto";
+    max-width: 100%;
+    /* margin-top: 2%; */
+  }
+
+  footer#footer {
+    margin-top: 20%;
+  }
+
+  /* .wp-block-columns.container1-column.has-background {
+    padding: 1.25em 0.15em;
+  } */
+
+  .alicia-briggs-wells-mtt {
+    /* margin-top: 3%; */
+    font-family: "Roboto";
+  }
+
+  .wp-block-columns.are-vertically-aligned-center.container1-column.has-background {
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .wp-block-columns.meet-the-team-alicia1.has-background {
+    width: 80%;
+  }
+
+  .wp-block-columns.container-meet-the-team1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 768px) {
+
+  .wp-block-columns {
+    margin-bottom: 0 !important;
+  }
+
+  .wp-block-image.is-style-default1 {
+    min-height: 383px;
+  }
+
+  img.wp-image-4056 {
+    height: 350px;
+  }
+
+  img.wp-image-6149 {
+    height: 350px;
+  }
+
+  .wp-block-columns.section1-alicia {
+    display: flex;
+  }
+
+  .wp-block-columns.section2-alicia {
+    display: flex;
+  }
+
+  div#topbar {
+    height: 60px;
+  }
+
+  header#header-v3 {
+    height: 100px;
+  }
+
+  #header-v3 .logo {
+    margin-top: 2px;
+  }
+
+  .three.columns {
+    margin: auto;
+  }
+
+  /* .wp-block-columns.container1-column.has-background {
+    padding: 2.25em 1.375em;
+  } */
+
+  .wp-block-group.meet-the-team-header.has-background {
+    width: 60%;
+    max-width: 100%;
+    margin: 50px auto;
+    border-radius: 1rem;
+  }
+
+  .wp-block-columns.has-background {
+    border-radius: 1rem !important;
+  }
+
+  .alicia-briggs-wells-header {
+    border-radius: 1rem;
+    border: ridge #51e2f5;
+    padding: 0.6%;
+    width: 70%;
+    margin: auto;
+    font-size: 20px !important;
+  }
+
+  .meet-the-team-alicia1 {
+    padding: 15px;
+    border: ridge #51e2f5;
+    border-radius: 1rem;
+    margin: 0px auto;
+    font-family: "Roboto";
+    max-width: 100%;
+    /* margin-top: 2%; */
+  }
+
+  /* footer#footer {
+    margin-top: 5%;
+  } */
+
+  /* .wp-block-columns.container1-column.has-background {
+    padding: 1.25em 0.15em;
+  } */
+
+  .alicia-briggs-wells-mtt {
+    margin-top: 3%;
+    font-family: "Roboto";
+  }
+
+  .wp-block-columns.are-vertically-aligned-center.container1-column.has-background {
+    width: 60%;
+    margin: 0px auto;
+  }
+
+  .wp-block-columns.meet-the-team-alicia1.has-background {
+    width: 80%;
+  }
+
+  .wp-block-columns.container-meet-the-team1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .is-style-default1 img {
+    border-radius: 1rem !important;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1536px) and (max-width: 2152px) {
+
+  .wp-block-columns {
+    margin-bottom: 0 !important;
+  }
+
+  .wp-block-columns.meet-the-team-alicia1.has-background {
+    width: 80%;
+  }
+
+  .wp-block-columns.container-meet-the-team1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .wp-block-columns.section1-alicia {
+    display: flex;
+  }
+
+  .wp-block-columns.section2-alicia {
+    display: flex;
+  }
+}
+
+/* Media query for Galaxy Fold when folded */
+@media only screen and (min-width: 840px) and (max-width: 1960px) {
+
+  .wp-block-columns {
+    margin-bottom: 0 !important;
+  }
+
+  .wp-block-columns.meet-the-team-alicia1.has-background {
+    width: 80% !important;
+  }
+
+  .wp-block-columns.container-meet-the-team1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .wp-block-columns.section1-alicia {
+    display: flex;
+    margin: 0px auto;
+  }
+
+  .wp-block-columns.section2-alicia {
+    display: flex;
+    margin: 0px auto;
+  }
+	.wp-block-buttons > .wp-block-button:last-child {
+        margin-right: 0;
+        width: 35%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+  .wp-block-columns {
+    margin-bottom: 0 !important;
+  }
+
+
+  /* img.wp-image-5567 {
+    margin-top: 20%;
+  } */
+
+  .section2-alicia .wp-block-column.col-3-first-edit {
+    margin: 0px auto;
+    min-height: 350px;
+  }
+
+  .section2-alicia .wp-block-column.col-4-first-edit {
+    margin: 0px auto;
+    min-height: 350px;
+  }
+
+  h2.has-text-align-center.alicia-briggs-wells-header {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+
+  .wp-block-column:not(:only-child) {
+    flex-basis: calc(100% - 1em) !important;
+    flex-grow: 0;
+  }
+
+  .wp-block-column:nth-child(2n) {
+    margin-left: 0em;
+  }
+
+  .wp-block-image {
+    margin: 3em auto;
+  }
+
+  /* .container-meettheteam-1 {
+    margin-top: 10%;
+  } */
+
+    #topbar .callus h4:nth-child(2) a::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 12px;
+      margin-right: 5px;
+      background: url("https://auroraeventteam.com/wp-content/uploads/2024/02/email-icon-99.png")
+        center center no-repeat;
+      background-size: cover;
+    }
+
+    .eight.columns .callus h4:nth-of-type(1)::before {
+      content: "";
+      width: 20px;
+      height: 15px;
+      margin-right: 10px;
+      display: inline-block;
+      background: url("https://auroraeventteam.com/wp-content/uploads/2024/02/icons8-phone-25-1.png")
+        center center no-repeat;
+    }
+
+    #topbar .callus h4:nth-child(2) a::before {
+      padding-left: px;
+      margin-left: 20px;
+    }
+  }
+	.wp-block-buttons>.wp-block-button:last-child {
+    margin-right: 0;
+    width: 65%;
+}
+
+
+.alicia-briggs {
+  min-height: 350px;
+}
+
+.alicia-briggs2 {
+  min-height: 350px;
+}
+
+.alicia-briggs.col-1-first-edit .wp-block-columns {
+  
+  height: 100%;
+  min-height: 350px;
+}
+.alicia-briggs.col-2-first-edit .wp-block-columns {
+  
+  height: 100%;
+  min-height: 350px;
+}
+.alicia-briggs.col-3-first-edit .wp-block-columns {
+  
+  height: 100%;
+  min-height: 350px;
+}
+.alicia-briggs.col-4-first-edit .wp-block-columns {
+  
+  height: 100%;
+  min-height: 350px;
+}
+
+/* .wp-block-columns.section1-alicia .wp-block-column:nth-child(1),
+   .wp-block-columns.section2-alicia .wp-block-column:nth-child(3),
+   .wp-block-columns.section2-alicia .wp-block-column:nth-child(4),
+    .wp-block-columns.section1-alicia .wp-block-column:nth-child(2)*/
+
+/* Set the button width to 53% and center it */
+.wp-block-button__link.has-background {
+    border-radius: 0%;
+    width: 42%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Default button styles */
+.wp-block-button__link.has-background {
+    border-radius: 0%;
+    width: 42%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Default block styles */
+.wp-block-columns.apply-block {
+    width: 100%;
+    margin: auto;
+}
+
+.apply-block .wp-block {
+    max-width: none;
+    margin: auto;
+}
+.wp-block-buttons.is-content-justification-center {
+    justify-content: center;
+    width: 53%;
+    margin: auto;
+}
+
+/* Adjust the block width for desktop view */
+@media only screen and (min-width: 1025px) {
+    .wp-block-columns.apply-block {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+	.wp-block-buttons>.wp-block-button:last-child {
+    margin-right: 0;
+    width: 20%;
+}
+}
+
+.wp-block-buttons.is-content-justification-center {
+    justify-content: center;
+    width: 53%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .wp-block-columns.apply-block {
+        width: 100vw; /* Set block width to 100vw for tablet and mobile views */
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+	.wp-block-button__link.has-background {
+        width: 80%;
+    }
+	.wp-block-buttons>.wp-block-button:last-child {
+    margin-right: 0;
+    width: 80%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  .wp-block-columns {
+    margin-bottom: 0 !important;
+  }
+
+    .wp-block-buttons > .wp-block-button:last-child {
+        margin-right: 0;
+        width: 34%!important;
+    }
+	.wp-block-cover-image h1:not(.has-text-color), .wp-block-cover-image h2:not(.has-text-color), .wp-block-cover-image h3:not(.has-text-color), .wp-block-cover-image h4:not(.has-text-color), .wp-block-cover-image h5:not(.has-text-color), .wp-block-cover-image h6:not(.has-text-color), .wp-block-cover-image p:not(.has-text-color), .wp-block-cover h1:not(.has-text-color), .wp-block-cover h2:not(.has-text-color), .wp-block-cover h3:not(.has-text-color), .wp-block-cover h4:not(.has-text-color), .wp-block-cover h5:not(.has-text-color), .wp-block-cover h6:not(.has-text-color), .wp-block-cover p:not(.has-text-color) {
+		font-size:19px!important;
+	}
+}
+@media only screen and (min-width: 280px) and (max-width: 540px) and (min-height: 320px) and (max-height: 1871px) {
+    .wp-block-buttons > .wp-block-button:last-child {
+        margin-right: 0;
+        width: 100%;
+    }
+	.wp-block-cover-image h1:not(.has-text-color), .wp-block-cover-image h2:not(.has-text-color), .wp-block-cover-image h3:not(.has-text-color), .wp-block-cover-image h4:not(.has-text-color), .wp-block-cover-image h5:not(.has-text-color), .wp-block-cover-image h6:not(.has-text-color), .wp-block-cover-image p:not(.has-text-color), .wp-block-cover h1:not(.has-text-color), .wp-block-cover h2:not(.has-text-color), .wp-block-cover h3:not(.has-text-color), .wp-block-cover h4:not(.has-text-color), .wp-block-cover h5:not(.has-text-color), .wp-block-cover h6:not(.has-text-color), .wp-block-cover p:not(.has-text-color) {
+		font-size:21px;
+	}
+}
+.wp-block-columns.apply-block{
+	margin-bottom: -24%!important;
+}
+
+.wp-block-group.group1 {
+  padding: 2%;
+	border: ridge #51e2f5;
+	border-radius: 1rem;
+}
+/* .section1-alicia {
+	padding: 2%;
+	border: ridge #51e2f5;
+	border-radius: 1rem;
+}
+.section2-alicia {
+	padding: 2%;
+	border: ridge #51e2f5;
+	border-radius: 1rem;
+} */
